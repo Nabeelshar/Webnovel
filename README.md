@@ -35,6 +35,8 @@ npm i
 # Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
+Then create supabase account fro database(its free)
+and run sql file there.
 
 **Edit a file directly in GitHub**
 
