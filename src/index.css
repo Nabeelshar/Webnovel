@@ -1,0 +1,125 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 20% 16%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 16%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 16%;
+
+    --primary: 220 70% 50%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 20% 16%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 15% 46%;
+
+    --accent: 220 70% 97%;
+    --accent-foreground: 220 70% 50%;
+
+    --destructive: 0 80% 62%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 14% 92%;
+    --input: 220 14% 92%;
+    --ring: 220 85% 65%;
+
+    --radius: 0.6rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+  }
+
+  a {
+    @apply transition-all duration-200;
+  }
+
+  ::selection {
+    @apply bg-primary/20 text-primary;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/80 backdrop-blur-lg border border-white/20 shadow-sm;
+  }
+  
+  .frosted-glass {
+    @apply bg-white/60 backdrop-blur-xl border border-white/30 shadow-md;
+  }
+  
+  .neo-card {
+    @apply bg-white border border-slate-200/60 shadow-sm hover:shadow-md transition-all duration-300;
+  }
+  
+  .btn-hover {
+    @apply transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] hover:shadow-md;
+  }
+  
+  .link-hover {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full;
+  }
+  
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 md:py-24 md:px-8 lg:px-12;
+  }
+
+  .page-appear {
+    @apply animate-fade-in motion-reduce:animate-none;
+  }
+  
+  .page-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12;
+  }
+  
+  .prose-content {
+    @apply prose prose-slate max-w-none prose-headings:font-medium prose-p:text-foreground/90 prose-a:text-primary prose-a:no-underline hover:prose-a:underline;
+  }
+}
+
+.chapter-content {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  line-height: 1.8;
+  max-width: 75ch;
+  margin: 0 auto;
+  font-size: 1.125rem;
+}
+
+.chapter-content p {
+  margin-bottom: 1.5em;
+}
+
+@media (max-width: 768px) {
+  .chapter-content {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+}
