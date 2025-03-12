@@ -1,4 +1,4 @@
-# Welcome to your Webnovel project
+# Welcome to your Webnovel Website
 
 Try here 
 https://storygrove.lovable.app/
