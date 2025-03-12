@@ -1,5 +1,10 @@
 # Welcome to your Webnovel project
 
+Try here 
+https://storygrove.lovable.app/
+
+also Give it star
+
 ## Project info
 
 **Use your preferred IDE**
@@ -9,13 +14,20 @@ If you want to work locally using your own IDE, you can clone this repo and push
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
 Follow these steps:
-
+![Screenshot 1](Screenshot%202025-03-12%20172150.png)
+![Screenshot 2](Screenshot%202025-03-12%20172200.png)
+![Screenshot 3](Screenshot%202025-03-12%20172212.png)
+![Screenshot 4](Screenshot%202025-03-12%20172226.png)
+![Screenshot 5](Screenshot%202025-03-12%20172247.png)
+![Screenshot 6](Screenshot%202025-03-12%20172333.png)
+![Screenshot 7](Screenshot%202025-03-12%20172357.png)
+![Screenshot 8](Screenshot%202025-03-12%20172407.png)
 ```sh
 # Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+git clone https://github.com/Nabeelshar/Webnovel
 
 # Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+cd webnovel
 
 # Step 3: Install the necessary dependencies.
 npm i
@@ -48,10 +60,3 @@ This project is built with .
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
-
-Simply open [Webnovel](https://lovable.dev/projects/6dceb629-7f7e-415d-b0c2-8f5ba8d76ab4) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
