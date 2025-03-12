@@ -3,7 +3,7 @@
 Try here 
 https://storygrove.lovable.app/
 
-also Give it star
+Give it star and support on patreon 
 
 ## Project info
 
